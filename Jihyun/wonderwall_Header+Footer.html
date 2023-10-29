@@ -4,113 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>원더월 Wonderwall | Art Changes Life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        @import url(./header+footer.css);
+    </style>
 </head>
 <body>
     <header>
-        <div>
-            <img src="./image/hamburger.svg" alt="hamburger">
-            <img src="./image/logo.svg" alt="logo">
-            <h3>SIGN IN</h3>
+        <div class="oHead">
+            <div class="iHead">
+                <img class="logo" src="./image/logo.svg" alt="logo">
+                <div class="oSearch">
+                    <div class="iSearch">
+                        <img class="searchIcon" src="./image/search.svg" alt="search">
+                        <input autocomplete="off" maxlength="64" placeholder="Search artist, classes">
+                    </div>
+                </div>
+                <div class="signIn">
+                    <a href="">SIGN IN</a>
+                </div>
+            </div>
         </div>
     </header>
     <nav>
-        <div>
-            <span>
-                <h3>CLASS</h3>
-                <img src="./image/nav.svg" alt="/">
-            </span>
-            <span>
-                <h3>ART LAB</h3>
-            </span>
-            <span>
-                <h3>STAGE</h3>
-            </span>
-            <span>
-                <h3>SONGCAMP</h3>
-            </span>
-            <span>
-                <h3>STORE</h3>
-                <img src="./image/nav.svg" alt="/">
-            </span>
+        <div class="oNav">
+            <div class="iNav">
+                <span>
+                    <div>CLASS</div>
+                    <img src="./image/nav.svg" alt="/">
+                </span>
+                <a>ART LAB</a>
+                <a>STAGE</a>
+                <a>SONGCAMP</a>
+                <span>
+                    <div>STORE</div>
+                    <img src="./image/nav.svg" alt="/">
+                </span>
+            </div>
         </div>
     </nav>
     <section>
-        <img src="./image/mamamoo.jpg" alt="">
-        <div>
+        <div class="mainImage">
+            <img src="./image/mamamoo.jpg" alt="">
+            <div class="imgLabel">STAGE</div>
+            <div class="imgTitle">MAMAMOO WORLD TOUR [MY CON]</div>
             <div>
-                <label for="">STAGE</label>
-            </div>
-            <div>
-                <span>MAMAMOO WORLD TOUR [MY CON]</span>
-            </div>
-            <div>
-                <span>USA VOD OPEN</span>
-                <div>
-                    <img src="./image/left.svg" alt="/">
-                </div>
-                <div>1</div>
-                <div>
-                    <span>/</span>
-                </div>
-                <div>2</div>
-                <div>
-                    <img src="./image/right.svg" alt="/">
-                </div>
+                <div class="imgSubTitle">USA VOD OPEN</div>
+                <img class="arrowLeft" src="./image/left.svg" alt="/">
+                <div class="nowPage">1</div>
+                <span class="pageSlash">/</span>
+                <div class="totalPage">2</div>
+                <img class="arrowRight" src="./image/right.svg" alt="/">
             </div>
         </div>
     </section>
     <footer>
-        <div>
-            <div>
-                <div>
-                    <img src="./image/footerLogo.svg" alt="logo">
-                </div>
-                <div>
-                    <a href="">이용약관</a>
-                    <a href="">개인정보취급방침</a>
-                    <a href="">사업자정보확인</a>
-                    <a href="">환불규정</a>
-                    <a href="">공지사항</a>
-                    <a href="">FAQ</a>
-                    <a href="">채용</a>
-                    <br>
-                    <a href="">기업 교육</a>
-                    <a href="">브랜드 제휴</a>
-                </div>
-                <div>
-                    주식회사 노머스
-                </div>
-                <div>
-                    대표 : 김영준 | 개인정보관리책임자 : 김영준 | 사업자번호 : 225-87-01399 |
-                    <br>통신판매업 신고번호 : 2020-서울강남-03417 | ADDRESS : 서울특별시 강남구 도산대로 145 인우빌딩 7층
-                    <br>TEL : 02-6409-9888 | E-MAIL : info@wonderwall.kr
-                </div>
-                <div>
-                    v2.12.13
-                    <br>C 2023 Wonderwall All rights reserved
-                </div>
-            </div>
-            <div>
-                <div>최신 소식 받기</div>
-                <div>
-                    <img src="./image/youtubeIcon.svg" alt="youtube">
-                    <img src="./image/instagramIcon.svg" alt="insta">
-                    <img src="./image/facebookIcon.svg" alt="facebook">
-                    <img src="./image/naverIcon.svg" alt="naver">
-                </div>
-                <div>
-                    <img src="./image/language.svg" alt="language">
-                   <div>한국어</div>
-                    <div>
-                       <img src="./image/arrow.svg" alt="arrow"> 
+        <div class="oFooter">
+            <div class="iFooter">
+                <div class="leftInfo">
+                    <div class="footerLogo">
+                        <img src="./image/footerLogo.svg" alt="logo">
+                    </div>
+                    <div class="infoLink">
+                        <a href="">이용약관</a>
+                        <a href="">개인정보취급방침</a>
+                        <a href="">사업자정보확인</a>
+                        <a href="">환불규정</a>
+                        <a href="">공지사항</a>
+                        <a href="">FAQ</a>
+                        <a href="">채용</a>
+                        <br>
+                        <a href="">기업 교육</a>
+                        <a href="">브랜드 제휴</a>
+                    </div>
+                    <div class="companyName">주식회사 노머스</div>
+                    <div class="companyInfo">
+                        대표 : 김영준 | 개인정보관리책임자 : 김영준 | 사업자번호 : 225-87-01399 |
+                        <br>통신판매업 신고번호 : 2020-서울강남-03417 | ADDRESS : 서울특별시 강남구 도산대로 145 인우빌딩 7층
+                        <br>TEL : 02-6409-9888 | E-MAIL : info@wonderwall.kr
+                    </div>
+                    <div class="copyright">
+                        v2.12.13
+                        <br>C 2023 Wonderwall All rights reserved
                     </div>
                 </div>
-                <div>
-                    <img src="./image/dollar.svg" alt="dollar">
-                    <div>KRW</div>
-                    <div>
-                        <img src="./image/arrow.svg" alt="arrow"> 
-                     </div>
+                <div class="rightInfo">
+                    <div class="snsTitle">최신 소식 받기</div>
+                    <div class="snsImg">
+                        <img src="./image/youtubeIcon.svg" alt="youtube">
+                        <img src="./image/instagramIcon.svg" alt="insta">
+                        <img src="./image/facebookIcon.svg" alt="facebook">
+                        <img src="./image/naverIcon.svg" alt="naver">
+                    </div>
+                    <div class="langList">
+                        <img src="./image/language.svg" alt="language">
+                        <div class="langName">한국어</div>
+                        <img class="langArrow" src="./image/arrow.svg" alt="arrow"> 
+                    </div>
+                    <div class="currencyList">
+                        <img src="./image/dollar.svg" alt="dollar">
+                        <div class="currencyName">KRW</div>
+                        <img class="currencyArrow" src="./image/arrow.svg" alt="arrow"> 
+                    </div>
                 </div>
             </div>
         </div>

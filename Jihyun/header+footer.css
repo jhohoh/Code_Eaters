@@ -1,0 +1,321 @@
+* {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
+
+/******HEADER******/
+.oHead {
+    width: 100%;
+    margin: 0;
+    height: 100px;
+}
+
+.iHead {
+    display: flex;
+    width: 65%;
+    height: 100px;
+    margin: auto;
+}
+
+.logo {
+    width: 15%; /* 수정: 화면 폭에 따라 조절됨 */
+    height: 100px;
+}
+
+.oSearch {
+    width: 60%; /* 수정: 화면 폭에 따라 조절됨 */
+    height: 76px;
+    padding: 20px 0 5px 2%; /* 수정: 퍼센트로 조절됨 */
+}
+
+.iSearch {
+    display: flex;
+    width: 60%; /* 수정: 화면 폭에 따라 조절됨 */
+    height: 60px;
+    background-color: #181817;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.searchIcon {
+    background-color: #181817;
+    width: 5%; /* 수정: 화면 폭에 따라 조절됨 */
+    height: 25px;
+    margin: 0 3%; /* 수정: 퍼센트로 조절됨 */
+}
+
+input {
+    flex: 1;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(242, 242, 242);
+    font-size: 1.2em; /* 수정: 화면 크기에 따라 조절됨 */
+}
+
+.signIn {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 1.3em; /* 수정: 화면 크기에 따라 조절됨 */
+}
+
+.signIn a {
+    text-decoration: none;
+}
+
+.oNav {
+    width: 100%;
+    height: 70px;
+}
+
+.iNav {
+    display: flex;
+    width: 65%;
+    height: 70px;
+    margin: auto;
+    align-items: center;
+    font-size: 1.3em; /* 수정: 화면 크기에 따라 조절됨 */
+}
+
+.iNav span {
+    width: 10%; /* 수정: 화면 폭에 따라 조절됨 */
+    display: flex;
+    align-items: center;
+}
+
+.iNav div {
+    display: inline-block;
+    align-items: center;
+}
+
+.iNav a {
+    margin-right: 5%; /* 수정: 퍼센트로 조절됨 */
+    text-decoration: none;
+}
+
+.iNav img {
+    width: 1.5em; /* 수정: 화면 크기에 따라 조절됨 */
+    height: 1.2em;
+    padding-left: 13px;
+}
+
+section img {
+    width: 100%;
+    position: relative;
+}
+
+.imgLabel {
+    position: absolute;
+    top: 900px;
+    left: 17%; /* 수정: 화면 폭에 따라 조절됨 */
+    padding: 5px 13px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    font-size: 1.5em; /* 수정: 화면 크기에 따라 조절됨 */
+    background-color: transparent;
+}
+
+.imgTitle {
+    position: absolute;
+    top: 950px;
+    left: 16.5%; /* 수정: 화면 폭에 따라 조절됨 */
+    padding: 10px 13px;
+    font-size: 3em; /* 수정: 화면 크기에 따라 조절됨 */
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.imgSubTitle {
+    position: absolute;
+    top: 1030px;
+    left: 16.5%; /* 수정: 화면 폭에 따라 조절됨 */
+    padding: 10px 13px;
+    font-size: 2em; /* 수정: 화면 크기에 따라 조절됨 */
+    color: rgba(242, 242, 242, 0.7); /* 수정: 투명도 값을 rgba로 조절함 */
+    background-color: transparent;
+}
+
+.arrowLeft {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    top: 1035px;
+    right: 21%; /* 수정: 화면 폭에 따라 조절됨 */
+    padding: 10px 13px;
+    background-color: transparent;
+    transform: rotate(-180deg);
+}
+
+.nowPage {
+    position: absolute;
+    top: 1030px;
+    right: 20.5%; /* 수정: 화면 폭에 따라 조절됨 */
+    padding: 10px 13px;
+    font-size: 2em; /* 수정: 화면 크기에 따라 조절됨 */
+    color: rgb(255, 255, 255); /* 수정: 투명도 값을 rgba로 조절함 */
+    background-color: transparent;
+}
+
+.pageSlash {
+    position: absolute;
+    top: 1038px;
+    right: 19.6%; /* 수정: 화면 폭에 따라 조절됨 */
+    padding: 10px 13px;
+    font-size: 1.5em; /* 수정: 화면 크기에 따라 조절됨 */
+    color: rgb(255, 255, 255); /* 수정: 투명도 값을 rgba로 조절함 */
+    background-color: transparent;
+}
+
+.totalPage {
+    position: absolute;
+    top: 1030px;
+    right: 18.5%; /* 수정: 화면 폭에 따라 조절됨 */
+    padding: 10px 13px;
+    font-size: 2em; /* 수정: 화면 크기에 따라 조절됨 */
+    color: rgb(255, 255, 255); /* 수정: 투명도 값을 rgba로 조절함 */
+    background-color: transparent;
+}
+
+.arrowRight {
+    position: absolute;
+    width: 2%;
+    height: 2%;
+    top: 1035px;
+    right: 16.5%; /* 수정: 화면 폭에 따라 조절됨 */
+    padding: 10px 13px;
+    background-color: transparent;
+}
+
+/******FOOTER******/
+
+.oFooter {
+    width: 100%;
+    height: 500px;
+}
+
+.iFooter {
+    display: flex;
+    width: 65%;
+    height: 500px;
+    margin: auto;
+    padding: 2.5rem 0px 4rem;
+}
+.leftInfo{
+    width: 60%;
+}
+
+.footerLogo{
+    width: 100%; /* 수정: 화면 폭에 따라 조절됨 */
+    height: 23px;
+    margin: 0px 0px 1rem 0px;
+}
+
+.footerLogo img{
+    width: 35%;
+}
+
+.infoLink{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    max-width: 50rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    opacity: 0.5;
+}
+
+.infoLink a{
+    margin: 0px 1rem 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.companyName{
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.companyInfo{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.64;
+    opacity: 0.5;
+}
+
+.copyright{
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.64;
+    opacity: 0.5;
+}
+
+.rightInfo{
+    width: 35%;
+    margin-left: auto;
+}
+
+.snsTitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%; /* 수정: 화면 폭에 따라 조절됨 */
+    height: 34px;
+    margin: 0px 0px 1.5rem 0px;
+}
+
+.snsImg{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.snsImg img{
+    width: 10%;
+    height: 10%;
+    margin-right: 2rem;
+    object-fit: contain;
+}
+.langList{
+    display: flex;
+    width: 40%;
+    padding: 0.9rem 0.5rem;
+    border: 1px solid rgb(98, 98, 98);
+    margin-top: 3rem;
+    justify-content: center;
+}
+.langName{
+    margin: 0px 0.75rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+}
+.langArrow{
+    width: 1rem;
+    margin-left: 33%;
+}
+
+.currencyList{
+    display: flex;
+    width: 40%;
+    padding: 0.9rem 0.5rem;
+    border: 1px solid rgb(98, 98, 98);
+    margin-top: 2rem;
+    justify-content: center;
+}
+.currencyName{
+    margin: 0px 0.75rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+}
+.currencyArrow{
+    width: 1rem;
+    margin-left: 33%;
+}
