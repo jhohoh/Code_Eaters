@@ -324,7 +324,11 @@ ul {
 }
 
 /****** SECTION4 by Hyojin ******/
-
+.BB {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
 .discoverYourArtist {
     display: flex;
     width: 100%;
@@ -336,6 +340,7 @@ ul {
     color: rgb(242, 242, 242);
 }
 .b{
+    display: inline-block;
     width: 252px; height: 323px;
     overflow: hidden;
     margin-right: 1.58%;
@@ -346,8 +351,6 @@ ul {
     background-repeat: no-repeat; 
     background-size: 252px 323px;
     position: relative;
-    right: 230px;
-    top: 30px;
 }
 .cgoALA {
     position: relative;
@@ -356,7 +359,6 @@ ul {
     left: 210px;
     width: 1.25rem;
     height: 1.25rem;
-
 }
 .b2{
     width: 252px; height: 323px;
@@ -368,8 +370,6 @@ ul {
     background-repeat: no-repeat; 
     background-size: 252px 323px;
     position: relative;
-    right: -40px;
-    top: -297px;
     background-image: url(https://media.wonderwall.kr/home_content/thumbnail/19/133162_1675848124478);
 }
 .b3{
@@ -407,14 +407,15 @@ ul {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     color: rgb(242, 242, 242);
 }
-.gIDdFC {
+.liveClipBox_Header {
     margin-bottom: 0.125rem;
     font-size: 0.75rem;
     line-height: 1.25rem;
 }
-.fpxwtl {
+.liveClipBox_Content {
     font-size: 0.875rem;
     line-height: 1.375rem;
+    font-weight: b;
 }
 .b:hover{
     opacity: 80%;
