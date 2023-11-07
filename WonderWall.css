@@ -324,10 +324,11 @@ ul {
 }
 
 /****** SECTION4 by Hyojin ******/
-.BB {
+.liveClipBox {
     display: inline-block;
     width: 100%;
     text-align: center;
+    margin-top: 2rem;
 }
 .discoverYourArtist {
     display: flex;
@@ -338,6 +339,12 @@ ul {
     margin-top: 10.1875rem;
     margin-bottom: 11.375rem;
     color: rgb(242, 242, 242);
+}
+.discoverYourArtist>span{
+    font-size: 1.2rem;
+}
+.discoverYourArtist>span>b{
+    font-size: 1.6rem;
 }
 .b{
     display: inline-block;
