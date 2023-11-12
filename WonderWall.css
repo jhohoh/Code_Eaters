@@ -16,7 +16,7 @@ body{
 
 .iHead {
     display: flex;
-    width: 60%;
+    width: 65%;
     height: 70px;
     margin: auto;
 }
@@ -27,14 +27,14 @@ body{
 }
 
 .oSearch {
-    width: 60%; 
+    width: 30%; 
     height: 50px;
     padding: 1.5% 0 0 1%; 
 }
 
 .iSearch {
     display: flex;
-    width: 60%; 
+    width: 100%; 
     height: 80%;
     background-color: #181817;
     border-radius: 10px;
@@ -78,7 +78,7 @@ input {
 
 .iNav {
     display: flex;
-    width: 60%;
+    width: 65%;
     height: 50px;
     margin: auto;
     align-items: center;
@@ -97,94 +97,110 @@ input {
 /****** SECTION1 by Jihyun ******/
 
 .mainImage{
-    background-image: url('https://media.wonderwall.kr/home_banner/image/26/133162_1694164273697');
-    background-size: 100% 660px;
-    width: 100%;
-    height: 660px;
+    background-image: linear-gradient(0deg, rgb(17, 17, 17) 0%, rgba(4, 4, 4, 0.035) 60%, rgba(46, 40, 23, 0) 70%), url('image/mamamoo.jpg');
+    width: 100%; height: 600px;
+    background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: left;
-    float: left;
-    margin-bottom: 2%;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.oMainImgTitleBox{
+    position: absolute;
+    z-index: 1;
+    bottom: 4rem;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0px 1.5rem;
+    color: rgb(242, 242, 242);
+}
+.iMainImgTitleBox{
+    width: 100%;
+    max-width: 73rem;
 }
 .mainImgNav{
-    width: 9%;
-    border-radius: 30px;
+    width: 4rem;
+    padding: 0.25rem 0.4rem;
     border: 1px solid rgb(255, 255, 255);
-    padding: 3px 10px;
-    font-weight: bold;
-    margin-top: 60%;
-    margin-bottom: 2%;
-    margin-left: 52%;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
 }
 .mainImgTitle1{
-    width: 100%;
-    font-weight: 900;
     font-size: 2rem;
-    margin-bottom: 2%;
-    margin-left: 52%;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 .mainImgTitle2{
-    width: 100%;
-    font-size: 1.5rem;
-    margin-bottom: 2%;
-    margin-left: 52%;
+    font-weight: 500;
+    font-size: 1.3rem;
+    opacity: 60%;
 }
-.arrowLeft {
-    position: absolute;
-    width: 2%;
-    height: 2%;
-    top: 1035px;
-    right: 21%;
-    padding: 10px 13px;
-    background-color: transparent;
+.page{
+    margin-left: 75%; /* 오른쪽 정렬을 위해 추가 */
+    display: inline-block;
+}
+.mainImgLeftArrow{
+    width: 0.8rem;
+    height: 0.8rem;
     transform: rotate(-180deg);
+    margin: 0 0.2rem 0 0.2rem;
+    justify-content: center;
+    align-items: center;
 }
-
-.nowPage {
-    position: absolute;
-    top: 1030px;
-    right: 20.5%; 
-    padding: 10px 13px;
-    font-size: 2em; 
-    color: rgb(255, 255, 255); 
-    background-color: transparent;
+.nowPage, .totalPage, .page>span{
+    display: inline-block;
+    font-size: 1rem;
 }
-
-.pageSlash {
-    position: absolute;
-    top: 1038px;
-    right: 19.6%; 
-    padding: 10px 13px;
-    font-size: 1.5em; 
-    color: rgb(255, 255, 255); 
-    background-color: transparent;
-}
-
-.totalPage {
-    position: absolute;
-    top: 1030px;
-    right: 18.5%; 
-    padding: 10px 13px;
-    font-size: 2em; 
-    color: rgb(255, 255, 255); 
-    background-color: transparent;
-}
-
-.arrowRight {
-    position: absolute;
-    width: 2%;
-    height: 2%;
-    top: 1035px;
-    right: 16.5%; 
-    padding: 10px 13px;
-    background-color: transparent;
+.mainImgRightArrow{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.2rem 0 0.2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /****** SECTION2 by Yeonju ******/
+.linkFourBox{
+    display: flex;
+    width: 65%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+.linkBox{
+    display: flex;
+    width: 280px;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    background-color: rgb(33, 33, 33);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+.linkBoxTitle{
+    margin-bottom: 0.6875rem;
+    color: rgb(242, 242, 242);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.linkBoxSubTitle{
+    color: rgb(242, 242, 242);
+    font-size: 0.875rem;
+    opacity: 80%;
+}
+/*
 .fourButton{
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 }
 button{
     background-color: rgb(33, 33, 33);
@@ -200,62 +216,126 @@ button:hover{
     text-align: left;
     padding-left: 30px;
 }
+*/
+
+/****** SECTION3 by Yeonju ******/
+.newsEvent{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 7.5rem;
+}
+.newsEventSubTitle{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8)
+}
+/*
 .newEvent{
     text-align: center;
     margin : 2% 0 2% 0;
 }
-.textOnImg{
+.newEvent>p{
+    margin-top: 0.5%;
+}
+*/
+.newsEventContents{
+    display: flex;
+    justify-content: center; 
     text-align: center;
-    margin : 2% 0 2% 0;
+    height: 600px;
+    margin : 3rem 0 7rem 0;
 }
-.background-wrap {
-    background-image: url('https://media.wonderwall.kr/home_news/thumbnail/33/133162_1684821298904');
-    background-size: 615px 660px;
-    width: 615px;
-    height: 660px;
-    display: flex;
+.newsEventContentImgLeft, .newsEventContentImgRight{
+    background-size: 100% 100%;
+    width: 31.5%;
     justify-content: center;
     align-items: center;
-    float: left;
-    margin-right: 25px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    /*background-position: center center;*/
+    /* -webkit-box-pack: center;
+    justify-content: center; */
 }
-.content {
-    margin-top: 400px;
+.newsEventContent {
+    bottom: 0px;
+    position: absolute;
+    display: flex;
+    width: 74%;
+    box-sizing: border-box;
     flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(242, 242, 242);
+}
+.newsEventNav{
+    width: 4rem;
+    padding: 0.25rem 0.4rem;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
 }
 
-.content span:nth-child(1) {
+.newsEventTitle{
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px; /*글자 사이의 간격을 조절*/
+    line-height: 1.75rem; /*텍스트 줄 간의 높이*/
+}
+.newsEventSubTitle{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    line-height: 1.5rem;
+    opacity: 0.8;
+    text-align: center;
+}
+.needMoreButton{
+    width: 58.15%;
+    padding: 0.875rem 0px;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0.25rem;
+    color: rgb(242, 242, 242);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+/* .newsEventContentLeft span:nth-child(1) {
     font-size: 280px;
     font-weight: bold;
 }
 
-.content span:nth-child(2) {
+.newsEventContentLeft span:nth-child(2) {
     font-size: 23px;
-}
-.background-wrap2 {
-    background-image: url('https://media.wonderwall.kr/home_news/thumbnail/32/133162_1682495709910');
-    background-size: 615px 660px;
-    width: 615px;
-    height: 660px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: left;
-}
-.content2 {
+} */
+
+/* .newsEventContentRight {
     margin-top: 400px;
     flex-direction: column;
 }
 
-.content2 span:nth-child(1) {
+.newsEventContentRight span:nth-child(1) {
     font-size: 280px;
     font-weight: bold;
 }
 
-.content2 span:nth-child(2) {
+.newsEventContentRight span:nth-child(2) {
     font-size: 23px;
-}
-#b{
+} */
+
+/* #b{
     margin-top: 7px;
     color: rgb(200, 200, 200);
     font-size: 13px;
@@ -272,21 +352,18 @@ button:hover{
     width: 280px; height: 55px; text-align: center; background-color: rgb(100, 100, 100, 0.771);
     font-size: 16px;
 }
-.textOnImg {
-    display: flex;
-    justify-content: center; /* 가로 가운데 정렬 */
-}
+
 .class{
     margin:auto;
-}
+} */
 
-/****** SECTION3 by Hyojin ******/
+/****** SECTION4 by Hyojin ******/
 
 .banner {
     display: flex;
     align-items: center;
-    width: 66%;
-    margin: 10% auto;
+    width: 65%;
+    margin: auto;
     height: 180px;
     border-radius: 10px;
     overflow: hidden;
@@ -300,7 +377,17 @@ button:hover{
     z-index: 1; /* 텍스트를 이미지 위에 표시하기 위해 z-index 설정 */
     margin-left: 5%;
 }
-
+.bannerTitle{
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.95rem;
+}
+.bannerSubTitle{
+    font-size: 1rem;
+    opacity: 70%;
+}
 ul {
     position: absolute;
     width: 100%;
@@ -311,6 +398,7 @@ ul {
     justify-content: center;
     margin-bottom: 1%;
 }
+
 .bannerLeftPoint, .bannerRightPoint {
     width: 20px;
     height: 20px;
@@ -323,143 +411,124 @@ ul {
     opacity: 100%;
 }
 
-/****** SECTION4 by Hyojin ******/
-.liveClipBox {
-    display: inline-block;
+/****** SECTION5 by Hyojin ******/
+.discoverYourArtist{
     width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+.discoverYourArtistTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 2rem;
     text-align: center;
-    margin-top: 2rem;
 }
-.discoverYourArtist {
+.discoverYourArtistSubTitle{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8)
+}
+.liveClipBox {
     display: flex;
-    width: 100%;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-top: 10.1875rem;
-    margin-bottom: 11.375rem;
-    color: rgb(242, 242, 242);
+    justify-content: center;
+    margin-top: 3rem;
+    height: 500px;
 }
-.discoverYourArtist>span{
-    font-size: 1.2rem;
-}
-.discoverYourArtist>span>b{
-    font-size: 1.6rem;
-}
-.b{
-    display: inline-block;
-    width: 252px; height: 323px;
+
+.liveClipImg {
+    width: 21.5%;
+    height: 100%;
     overflow: hidden;
-    margin-right: 1.58%;
-    margin-bottom: 1.58%;
+    margin: 0 1rem 0 0;
     border-radius: 0.6337rem;
-    isolation: isolate;
-    background-image: url(https://media.wonderwall.kr/home_content/thumbnail/20/133162_1677483815793);
-    background-repeat: no-repeat; 
-    background-size: 252px 323px;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center center;*/
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
-.cgoALA {
+.liveClipImgRight{
+    width: 19.5%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 0 0 0;
+    border-radius: 0.6337rem;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center center;*/
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.liveClipPlayButton {
+    position: absolute;
     top: 16px;
-    right: 1.25rem;
-    left: 210px;
+    right: 16px;
     width: 1.25rem;
     height: 1.25rem;
 }
-.b2{
-    width: 252px; height: 323px;
-    overflow: hidden;
-    margin-right: 1.58%;
-    margin-bottom: 1.58%;
-    border-radius: 0.6337rem;
-    isolation: isolate;
-    background-repeat: no-repeat; 
-    background-size: 252px 323px;
-    position: relative;
-    background-image: url(https://media.wonderwall.kr/home_content/thumbnail/19/133162_1675848124478);
-}
-.b3{
-    width: 252px; height: 323px;
-    overflow: hidden;
-    margin-right: 1.58%;
-    margin-bottom: 1.58%;
-    border-radius: 0.6337rem;
-    isolation: isolate;
-    background-repeat: no-repeat; 
-    background-size: 252px 323px;
-    position: relative;
-    right: -310px;
-    top: -622px;
-    background-image: url(https://media.wonderwall.kr/home_content/thumbnail/18/133162_1672825394163)
-}
-.bICLjD {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: center;
-    justify-content: center;
-    margin-top: 31.71%;
-    background: linear-gradient(0deg, rgb(17, 17, 17) 0%, rgba(4, 4, 4, 0.035) 82.67%, rgba(46, 40, 23, 0) 85.8%);
-}
-.bJWGjP {
-    padding: 0.5rem 0px 1rem;
-}
-.bJWGjP {
+
+.liveClipContents {
     position: absolute;
     bottom: 0px;
+    width: 80%;
     padding: 1rem 0px 1.25rem;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     color: rgb(242, 242, 242);
+    font-family: "Noto Sans KR", serif;
 }
-.liveClipBox_Header {
-    margin-bottom: 0.125rem;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
+
+.liveClipContentsTitle {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    letter-spacing: -0.5px;
+    line-height: 1.5rem;
+    opacity: 0.8;
 }
-.liveClipBox_Content {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: b;
-}
-.b:hover{
-    opacity: 80%;
-}
-.b2:hover{
-    opacity: 80%;
-}
-.b3:hover{
-    opacity: 80%;
-}
-.dBeOAO {
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
+
+.liveClipContentsArtistName {
+    overflow: hidden;
     width: 100%;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.625rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.hheQJi .clickable {
-    cursor: pointer;
+
+.liveClipItem:hover {
+    opacity: 0.8;
 }
-.eXyzEY {
-    display: flex;
+
+.oMore {
     width: 100%;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
-.eXyzEY .btn {
+
+.iMore {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.moreTitle {
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: -0.5px;
+    display: inline-block;
+    width: auto;
 }
-.hYWUoU {
-    height: 0.375rem;
+
+.moreArrow {
+    display: inline-block;
+    width: 1rem;
     margin-left: 0.5rem;
-    margin-bottom: -0.3rem;
 }
 
 /****** FOOTER by Jihyun ******/
@@ -472,7 +541,7 @@ ul {
 
 .iFooter {
     display: flex;
-    width: 65%;
+    width: 64%;
     height: 350px;
     margin: auto;
 }
@@ -483,7 +552,6 @@ ul {
 .footerLogo{
     width: 100%; 
     height: 23px;
-    margin: 0px 0px 1rem 0px;
 }
 
 .footerLogo img{
@@ -491,33 +559,30 @@ ul {
 }
 
 .infoLink{
-    width: 100%;
-    height: 100px;
+    height: 60px;
     display: flex;
-    max-width: 50rem;
+    max-width: 33rem;
     flex-wrap: wrap;
-    margin-top: 0.5rem;
-    opacity: 0.5;
+    opacity: 0.5; /*불투명도*/
 }
 
 .infoLink a{
-    margin: 0px 1rem 0px 0px;
-    padding: 0px 0px 0px 0px;
-    font-size: 1rem;
+    margin: 8px 16px 0px 0px;
+    font-size: 0.9rem;
     font-weight: 300;
     text-decoration: none;
 }
 
 .companyName{
     margin-top: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     opacity: 0.5;
 }
 
 .companyInfo{
     margin-top: 1rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 300;
     line-height: 1.64;
     opacity: 0.5;
@@ -525,7 +590,7 @@ ul {
 
 .copyright{
     margin-top: 1.25rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 300;
     line-height: 1.64;
     opacity: 0.5;
@@ -537,7 +602,7 @@ ul {
 }
 
 .snsTitle{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     width: 100%;
     height: 34px;
@@ -550,21 +615,32 @@ ul {
 }
 
 .snsImg img{
-    width: 10%;
-    height: 10%;
-    margin-right: 1.5rem;
+    width: 8%;
+    height: 8%;
+    margin-right: 1rem;
     object-fit: contain;
 }
-.langList, .currencyList {
+.langList{
     display: flex;
-    width: 40%;
+    width: 35%;
     padding: 0.9rem 0.5rem;
     border: 1px solid rgb(98, 98, 98);
     margin-top: 2rem;
-    justify-content: center;
-    align-items: center; /* 이미지 및 텍스트 중앙 정렬 */
+    justify-content: left;
 }
-
+.currencyList {
+    display: flex;
+    width: 35%;
+    padding: 0.9rem 0.5rem;
+    border: 1px solid rgb(98, 98, 98);
+    margin-top: 1rem;
+    justify-content: left;
+}
+.langImg, .currencyImg{
+    margin: 2px 0 0 10px;
+    width: 11%;
+    height: 11%;
+}
 .langName, .currencyName {
     margin: 0px 0.75rem;
     font-size: 0.9rem;
@@ -573,11 +649,14 @@ ul {
     white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
     overflow: hidden; /* 텍스트가 테두리를 벗어나지 않도록 설정 */
     text-overflow: ellipsis; /* 텍스트 오버플로우 시 마침표로 대체 */
+    justify-content: center;
+    opacity: 0.8; /*불투명도*/
 }
 
 .langArrow, .currencyArrow {
     width: 1rem;
-    margin-left: 0.25rem; /* 좌우 여백 조정 */
+    margin-left: 2rem; /* 좌우 여백 조정 */
+    opacity: 0.7; /*불투명도*/
 }
 
 
