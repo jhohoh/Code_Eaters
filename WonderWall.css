@@ -117,8 +117,8 @@ input {
     color: rgb(242, 242, 242);
 }
 .iMainImgTitleBox{
-    width: 100%;
-    max-width: 73rem;
+    width: 65%;
+    /* max-width: 75rem; */
 }
 .mainImgNav{
     width: 4rem;
@@ -141,7 +141,8 @@ input {
     opacity: 60%;
 }
 .page{
-    margin-left: 75%; /* 오른쪽 정렬을 위해 추가 */
+    float: right;
+     /* margin-left: 77.5%; 오른쪽 정렬을 위해 추가 */
     display: inline-block;
 }
 .mainImgLeftArrow{
@@ -388,7 +389,7 @@ button:hover{
     font-size: 1rem;
     opacity: 70%;
 }
-ul {
+.slickList {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -396,15 +397,22 @@ ul {
 .slick-dots{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 1%;
+    list-style: none;
+    padding: 0;
 }
 
 .bannerLeftPoint, .bannerRightPoint {
-    width: 20px;
-    height: 20px;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 100%; 
     cursor: pointer;
+    border: none;
     color: white;
     opacity: 50%;
+    padding: 0 0 0 0;
+
 }
 
 .bannerLeftPoint:hover, .bannerRightPoint:hover {
