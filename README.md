@@ -1,4 +1,4 @@
-# Code_Eaters
+# Code_Eaters(09.12 팀 창설)
 
 + Coder Eaters members : 오지현(jhohoh), 최연주(duswndi), 임효진(hyojin-i)
 GitHub : https://github.com/jhohoh/Code_Eaters
